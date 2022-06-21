@@ -1,0 +1,106 @@
+-->> What is scripting language ?
+Scripting language is also a prigramming language, the codes are written for a run time eviornment.
+Ex: js, jQuery, Python etc.
+
+
+-->> Difference var/let/const?
+            var:-                       
+           ~>Function scope element can be overridden by the value
+           ~>We can declare with same name and also reassign the value to the variable. 
+
+           let:-
+           ~>Block scope element.
+           ~>We cannot declare it again,but can reassign the value.
+
+           const:-
+           ~>Block scope element.
+           ~>Cannot declare or reassign the value to the variable.
+
+
+-->> Types of browser storages.
+  ~> Session Storage:-
+     The Session Storage stores data for only one session, the data is deleted when the browser closed.    
+     Session storage is a popular choice when it comes to storing data on a browser. 128MB of max capacity
+     It enables developers to save and retrieve different values.
+     They are server side files that contain user data.
+     We must use begin seesion start() method to start a session
+
+
+  ~>Local Storage:-
+    The localStorage stores the data with no expiration date. The data will not be deleted when the browser is closed, 
+    and will be available the next day, week, or year.
+
+
+  ~>Cookies:-
+    Client side files on local computer that holds user information.
+    Cookies end on lifetime set by the user, can store only a certain amount of info.
+    Browser's cookies have a max capacity of 4KB.
+    cookies kept in local computer, dont need a run start function.
+
+  ~>Cache storage:-
+    A cache is a reserved storage location that collects temporary data to help websites, browsers, and apps load faster. 
+    Whether it's a computer, laptop or phone, web browser or app, we will find some variety of a cache. 
+    A cache makes it easy to quickly retrieve data, which in turn helps devices run faster.
+    The maximum theoretical cache size is 2 GB. The size of cache you can specify is limited by the amount of physical memory and paging space available to the system
+
+
+-->> Differnece between Callback and Promise
+                    Callback                                                               Promise
+~>callbacks you tell the executing function                   ~>The executing function returns a special object to you (the promise) 
+  what to do when the asynchronous task                         and then you tell the promise what to do when the asynchronous task
+  completes
+
+
+-->> Asynchronous in  Js ?
+  Asynchronous means that things can happen independently of the main program flow.
+  In the current consumer computers, every program runs for a specific time slot and then it stops its execution to let another program continue their execution. 
+  This thing runs in a cycle so fast that it's impossible to notice.
+
+  Functions running in parallel with other functions are called asynchronous
+  Ex: A good example is JavaScript setTimeout()
+
+
+--->> Differnece between null and undefined?
+Null ==> In js Null is special value that represents an empty or unknown value
+Ex:- let name = null;
+Here name variable is empty and may have a value later
+Null is the intentional absence of any object value.
+
+undefined ==> A variable has undefined value when no value is assigned before using it
+Ex:- let name;
+Undefined is lack of value or unknown value.
+
+
+-->>Difference between function expression and function declaration
+   ~> Funcation declaration:-
+      A function declaration also known as a function statement declares a function with a function keyword. 
+      The function declaration must have a function name.Function declaration does not require a variable
+      assignment as they are standalone constructs and they cannot be nested inside a functional block.
+      These are executed before any other code. The function in function declaration can be accessed before and after the function definition.
+      Ex: function add (a,b) {
+         
+      }
+  
+   ~> Funcation expression:-
+      A function Expression is similar to a function declaration without the function name.
+      Function expressions can be stored in a variable assignment.
+      Function expressions load and execute only when the program interpreter reaches the line of code.
+      The function in function declaration can be accessed only after the function definition.
+      EX: var a = function (a,b) {
+
+      };
+
+
+-->>Difference between '==' and '===' ?
+   '==' checks the value irrespective of the datatype and '==='checks the datatype then value.
+   Ex: 3 == '3'=> true
+       3 === '3' => false
+
+
+-->> What are function constructors ?
+  ~>The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, 
+    but suffers from security and similar (but far less significant) performance issues
+
+-->> Can we write a method inside the constructor function?
+  ~>A constructor can call methods, yes. A method can only call a constructor in the same way anything else can: by creating a new instance.
+    Be aware that if a method constructs a new object of the same type, then calling that method from a constructor may result in an infinite loop. 

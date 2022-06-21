@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises Demo</title>
+</head>
+<body>
+    <script src="./1.js"></script>
+</body>
+</html>
+
+<!-- What are Promises ?
+
+Promises is a way through which we can deal with asynchronous operations in JavaScript. We know that callback functions were initially 
+used to handle asynchronous operations. However, callbacks functions were limited in terms of functionality and often led to confusing
+code, so, promises were introduced to deal with these problems
+
+A promise in JavaScript is similar to a promises we do in real life. When we make a promise, it is a guarantee that in future, 
+we are going to do something.in JavaScript, when we define a promise, either it will be resolved when the time comes,
+or it will get rejected. According to MDN, “the Promise object represents the eventual completion (or failure) of an asynchronous 
+operation and its resulting value.”
+
+A promise is an object which takes a callback and executes it aysnchronously. A promise is considered easier to use and maintain than callbacks.
+
+A promise has three states:
+pending: It is the initial state.
+Fulfilled: It indicates that the promised operation was successful.
+Rejected: It indicates that the promised operation was unsuccessful. -->
+
+
+<!-- Promises.all
+
+The Promise.all() method is actually a method of Promise object,that takes an array of promises(an iterable) as an input.
+It returns a single Promise that resolves when all of the promises passed as an iterable, which have resolved or when the iterable contains no promises.
+In simple way, if any of the passed-in promises reject, the Promise.all() method asynchronously rejects the value of the promise that already rejected, 
+whether or not the other promises have resolved.  -->
+
+<!-- Promise.all is actually a promise that takes an array of promises as an input (an iterable). Then it gets resolved when all the promises get resolved or 
+any one of them gets rejected -->
+
+
+<!-- Promise.race -->
+ <!-- The Promise. race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects,
+ with the value or reason from that promise. -->
