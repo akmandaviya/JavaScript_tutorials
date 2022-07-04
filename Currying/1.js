@@ -1,6 +1,7 @@
 //This is function currying using bind method, here we make a copy of function multiply and 
 // we create more methods out of it by resetting the arguments 
-
+// Currying simply means evaluating functions with multiple arguments and decomposing them into a sequence of functions with a single argument.
+// Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c) .
 
 // //Using Bind method
 let multiply = function(a,b) {
