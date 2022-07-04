@@ -4,50 +4,33 @@
 // promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
 
 
-function f1 (location) {
-    return new Promise((resolve, reject)=>{
- console.log(`Making request to ${location}`);
-
-  if(location == 'Google') {
-      resolve('This is google');
-  }else {
-      reject('Google is the only option');
-  }
-    });
+// without using async and await
+console.log("hello world")
+function a () {
+    console.log("inside the function")
+    return "I'm happy !!!"
 }
+console.log("before calling")
+let b = a()
+console.log("after calling")
+console.log(b)
+console.log("last line")
 
-function f2(response) {
-    return new Promise((resolve,reject)=>{
-      console.log("Request under process!!");
-      resolve(`For your information + ${response}`);
-    });
+
+//using asyc and await
+console.log("Hello world")
+async function f1 () {
+    console.log("inside the function")
+    const response = await fetch('https://api.github.com/users')
+    console.log("before response")
+    const users = await response.json()
+    console.log('users resolved')
+    return users
 }
+console.log('before calling')
+let c = f1()
+console.log('after calling')
+console.log(c)
+c.then(data => console.log(data))
+console.log("last line")
 
- f1('Google').then((response)=> { //f1('faceboook').then((response) ==> error
-    console.log('There is response.')
-    return f2(response);
- }).then(process => {
-     console.log(process);
- }).catch(error => {
-     console.log(error);
- });
-
-
-
-
- //----------------------------------------------------------------------------------
- //doing the same thing with async await
-
- async function doTask() {
-   try{
-    const response = await f1('Google');
-    console.log("This is the repsonse");
-    const process = await f2(response);
-    console.log(process); 
-   }
-   catch (error){
-  console.log(error);
-   }
-
- }
- doTask();
