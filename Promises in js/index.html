@@ -40,7 +40,11 @@ whether or not the other promises have resolved.  -->
 <!-- Promise.all is actually a promise that takes an array of promises as an input (an iterable). Then it gets resolved when all the promises get resolved or 
 any one of them gets rejected -->
 
+<!-- Promise. all() is useful anytime you have more than one promise and your code wants to know when all the operations that those promises represent have finished successfully. 
+It does not matter what the individual async operations are. -->
+
 
 <!-- Promise.race -->
- <!-- The Promise. race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects,
- with the value or reason from that promise. -->
+ <!-- The race method is another way the promise object allows you to work with multiple promises.
+The Promise. race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable array is fulfilled or rejected.
+This array of promises is passed as an argument to the method.. -->
