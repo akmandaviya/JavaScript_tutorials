@@ -13,7 +13,7 @@ that allows you to make web pages interactive
   ==>> disadv :  Client side security, browser support  
 
 -->> Features of ES6 ?
-   let, const, arrow functions, promises, symbol
+   let, const, arrow functions, promises, symbol, temperal literates, spread operator.
 
 -->> What is scripting language ?
 Scripting language is also a programming language, the codes are written for a run time eviornment.

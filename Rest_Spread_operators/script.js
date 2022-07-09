@@ -26,3 +26,13 @@ console.log(Math.min(usingSpread)); //-->o/p->Nan
 console.log(Math.min(...usingSpread));
 
 
+// let a = [1,2,3,4,5]
+// let b = [6,7,8,9,a]
+// console.log(b)  => this will add complete array at the 4th index
+
+
+let a = [1,2,3,4,5]
+let b = [6,7,8,9,...a]
+console.log(b) // this will add only the elements of the array from the 4th index
+
+
