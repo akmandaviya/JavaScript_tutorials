@@ -38,8 +38,8 @@ info.call(name2, "Mumbai", "Maharashtra");
 info.call(name3, "Rajkot", "Gujarat");
 
 //apply method
-info.call(name2, ["Mumbai", "Maharashtra"]);
-info.call(name3, ["Rajkot", "Gujarat"]);
+info.apply(name2, ["Mumbai", "Maharashtra"]);
+info.apply(name3, ["Rajkot", "Gujarat"]);
 
 //bind method
 //this returns a method which can be invoked later when we want

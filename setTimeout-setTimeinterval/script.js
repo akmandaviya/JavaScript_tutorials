@@ -26,7 +26,7 @@ const d = "using setTimer Interval"
 console.log(d)
 setInterval(() => {
     const e = "I'm happy!!"
-    console.log(e)
+    console.log(e)  
 }, 1000);
 
 function g () {
