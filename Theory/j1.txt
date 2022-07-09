@@ -4,6 +4,17 @@ JavaScript is a single threaded synchronous programming language
 JavaScript is a text-based programming language used both on the client-side and server-side 
 that allows you to make web pages interactive
 
+-->> adv and disadv of JavaScript ?
+   ==>> Adv :- Speed : runs very fast at the client dise browser
+               Simplicity : simple to learn and implement
+               Popularity : used everywhere on the web
+               Interoperability : works nicely with other browsers and works with variety of applications
+               Server load : being client side reduces demand on server
+  ==>> disadv :  Client side security, browser support  
+
+-->> Features of ES6 ?
+   let, const, arrow functions, promises, symbol
+
 -->> What is scripting language ?
 Scripting language is also a programming language, the codes are written for a run time eviornment.
 Ex: js, jQuery, Python etc.
@@ -66,7 +77,7 @@ Ex: js, jQuery, Python etc.
   Ex: A good example is JavaScript setTimeout()
 
 
---->> Differnece between null and undefined?
+--->> Differnece between null , not defined and undefined?
 Null ==> In js Null is special value that represents an empty or unknown value
 Ex:- let name = null;
 Here name variable is empty and may have a value later
@@ -75,6 +86,9 @@ Null is the intentional absence of any object value.
 undefined ==> A variable has undefined value when no value is assigned before using it
 Ex:- let name;
 Undefined is lack of value or unknown value.
+
+not defiend ==> accessing anything which is not defined
+Ex: console.lod(a) --> randomly
 
 
 -->>Difference between function expression and function declaration

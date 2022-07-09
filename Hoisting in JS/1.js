@@ -16,3 +16,13 @@ function getName() {
     console.log("Hello World");
 }
 
+
+
+// *** Temporal Dead Zone ***
+
+// time taken between hoisting and initialization of variable
+
+// console.log(a) == > refernce error a is not defined
+
+// let a = 10 == > refernce error a cannot accessed before initialization
+
