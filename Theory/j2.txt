@@ -1,0 +1,12 @@
+=> How JavaScript works ?
+  --> Everything in Js happens inside an execution context.
+      Execution contect is like a big box having 2 components:
+         (1) Memory(variable eviornment) ~> all the variables and components are stored in key value pair
+         (2) Code(Thread of execution) ~> here all codes are executed one line at a time.
+   
+  --> Js is synchronous single threaded language
+       ~> it means js can only execute one command at a time that too in a order/sequence
+  
+  --> Js code execution:
+     Phase one  : Memory allocation in callstack
+     Phase two : Code Execution

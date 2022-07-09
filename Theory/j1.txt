@@ -1,5 +1,11 @@
+-->> Waht is JavaScript ?
+JavaScript is a scripiting language.
+JavaScript is a single threaded synchronous programming language
+JavaScript is a text-based programming language used both on the client-side and server-side 
+that allows you to make web pages interactive
+
 -->> What is scripting language ?
-Scripting language is also a prigramming language, the codes are written for a run time eviornment.
+Scripting language is also a programming language, the codes are written for a run time eviornment.
 Ex: js, jQuery, Python etc.
 
 
