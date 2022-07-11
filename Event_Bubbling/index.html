@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling and Capturing</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+
+    <div onclick="topDiv()" class="topDiv">
+        <h1>Top div</h1>
+        <div onclick="midDiv()" class="midDiv">
+            <h1>Mid div</h1>
+            <div onclick="innerDiv()" class="innerDiv">
+                <h1>Inner div</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+
+
+</body>
+
+</html>
+
+<!-- Event Bubbling and Capturing are two ways for event propagation in DOM tree  -->
+<!-- for event bubbling to happen both event should be same -->
+<!-- use: complex web apps, games -->
+<!-- useeful in cases where we have parent and chil and both have event listners -->
