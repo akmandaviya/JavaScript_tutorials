@@ -20,5 +20,9 @@ console.log(arr)
 
 
 //(3)
-const a = arr.reduce()
+const a = arr.reduce(function (acc,curr) {
+    if(curr === acc) {
+        
+    }
+})
 
