@@ -71,5 +71,5 @@ console.log(newPerson)
 // printPerson(person1)
 
 function printPerson({name, age, favoriteFood = "french fries"}) {
-    console.log(`the name is ${user.name}, place is ${user.address.city} and food is ${favoriteFood}`)
+    console.log(`the name is ${name}, place is ${address.city} and food is ${favoriteFood}`)
 }
