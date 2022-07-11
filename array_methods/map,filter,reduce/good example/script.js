@@ -27,7 +27,7 @@ console.log(out1)
 
 //finding firstname with age less than 30
 //filter is used to filter out age less than 30
-//map is apllied on filter output to get firstname
+//map is applied on filter output to get firstname
 const out2 = users.filter((x) => x.age < 30).map((y) => y.firstName)
 console.log(out2)
 
