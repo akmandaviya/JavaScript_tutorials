@@ -19,10 +19,4 @@ for(let i= 0; i<arr.length;i++) {
 console.log(arr)
 
 
-//(3)
-const a = arr.reduce(function (acc,curr) {
-    if(curr === acc) {
-        
-    }
-})
 
